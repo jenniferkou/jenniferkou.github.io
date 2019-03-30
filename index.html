@@ -16,6 +16,8 @@
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -26,6 +28,7 @@
 
   <!-- JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/index.js"></script>
 
 
   <!-- Favicon
@@ -36,32 +39,70 @@
 <body>
 
   <!-- Navbar --------------------------------------- -->
-<div class="row navbar">
+<div class="navbar">
   <ul>
-    <li>
-      <a class="active">
-        <h3>Home</h3>
-      </a>
-    </li>
-    <li>
-      <a href="about.html">
-        <h3>About William</h3>
-      </a>
-    </li>
-    <li>
-      <a href="register.html">
-        <h3>Register</h3>
-      </a>
-    </li>
-    <li>
-      <a href="donate.html">
-        <h3>Donate</h3>
-      </a>
-    </li>
+  <li>
+    <a class="active">
+      <h3>Home</h3>
+    </a>
+  </li>
+  <li>
+    <a  href="about.html">
+      <h3>About William</h3>
+    </a>
+  </li>
+  <li>
+    <a href="register.html">
+      <h3>Register</h3>
+    </a>
+  </li>
+  <li>
+    <a href="volunteer.html">
+      <h3>Volunteer</h3>
+    </a>
+  </li>  
+  <li>
+    <a href="donate.html">
+      <h3>Donate</h3>
+    </a>
+  </li>
+  <li>
+    <a href="contactus.html">
+      <h3>Contact Us</h3>
+    </a>
+  </li>
     <li style="float:right; color: white; margin-right:65px; text-align: center;">
       <h1 style="padding-top: 10px; font-weight:400;">William Spotton </h1>
     </li>
   </ul>
+</div>
+
+
+<div class="navmobl">
+  <a onclick="hamburger_expand();"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+  <h2 style="float:right; color: white; margin-right:65px; text-align: center; padding-top: 10px; font-weight:400;">William Spotton </h2>
+</div>
+
+<div id="navmobl-side" class="sidenav">
+  <a style="float: right;" onclick="close_menu();"><i class="fa fa-times fa-3x" aria-hidden="true"></i></a>
+  <a href="index.html">
+    <h3>Home</h3>
+  </a>
+  <a  href="about.html">
+    <h3>About William</h3>
+  </a>
+  <a href="register.html">
+    <h3>Register</h3>
+  </a>
+  <a href="volunteer.html">
+    <h3>Volunteer</h3>
+  </a>
+  <a href="donate.html">
+    <h3>Donate</h3>
+  </a>
+  <a href="contactus.html">
+    <h3>Contact Us</h3>
+  </a>
 </div>
 
 
@@ -74,20 +115,24 @@
 
   <div class="container main-content">
     <div class="row">
-      <div class="twelve columns" style="margin-top: 5%">
+      <div class="eight columns" style="margin-top: 5%">
         <h1>Nominate William Spotton for Durham</h1>
         <h4 style="padding-top:10px">
 
-          I am seeking the Liberal Party Nomination <em>to champion the riding of Durham</em> in the upcoming Federal election. I believe our riding needs experienced, engaged and effective representation from an MP that is present, listens and relates to the real needs of the community. My professional background in the political, public and private sector and as an active member of the community for many years, means that I understand many of the challenges that you are facing. More importantly I believe my experience will help to facilitate effective solutions. <em>I will champion Durham in Ottawa.</em> 
-        </h4>
-        <h4 style="padding-top:10px">          
-          My campaign team and I will be knocking on every door and holding events in every area of the riding so please look for them and come and meet me. I look forward to seeing you soon. 
+I am seeking the Liberal Party Nomination in the upcoming Federal election. I believe our riding needs experienced, engaged and effective Liberal representation from an MP that is present and responsive to the needs of our riding. My professional background in the political, public and private sector means that I understand many of the challenges that you are facing and most importantly, can help to deliver results for you in Ottawa. My campaign team and I will be knocking on doors and holding event across the riding soon and I look forward to meeting you.
         </h4>
         <a style="margin-top: 5px;"class="button button-register" href="https://secure.liberal.ca/page/register-nomination?campid=7010a000001b3PhAAI">
-          <h3>
+          <h4>
             Register and Vote for William Spotton          
-          </h3>
+          </h4>
         </a>          
+      </div>
+
+      <div class="four columns" style="margin-top: 5%">
+        <h1>Follow William</h1>
+          <a class="icon" href="https://www.facebook.com/WilliamSpotton2019" target="_blank"><i class="fab fa-facebook-square fa-4x"></i></a>
+          <a class="icon" href="https://twitter.com/williamspotton" target="_blank"><i class="fab fa-twitter fa-4x"></i></a>
+          <a class="icon" href="https://www.instagram.com/williamspotton" target="_blank"><i class="fab fa-instagram fa-4x"></i></a>
       </div>
     </div>
   </div>
